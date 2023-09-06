@@ -1,0 +1,11 @@
+*
+
+!.gitignore
+
+!android/
+!arvr/
+!gdnative/
+!nativescript/
+!net/
+!pluginscript/
+!videodecoder/

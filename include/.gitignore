@@ -1,0 +1,7 @@
+*
+
+!.gitignore
+
+!core/
+!gen/
+!godot-headers/
