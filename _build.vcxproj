@@ -1553,6 +1553,7 @@
       <XMLDocumentationFileName>obj\$(TargetName)\</XMLDocumentationFileName>
       <SourceDependenciesFile>obj\$(TargetName)\</SourceDependenciesFile>
       <BrowseInformationFile>obj\$(TargetName)\</BrowseInformationFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -1578,6 +1579,7 @@
       <XMLDocumentationFileName>obj\$(TargetName)\</XMLDocumentationFileName>
       <SourceDependenciesFile>obj\$(TargetName)\</SourceDependenciesFile>
       <BrowseInformationFile>obj\$(TargetName)\</BrowseInformationFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -1604,6 +1606,7 @@
       <XMLDocumentationFileName>obj\$(TargetName)\</XMLDocumentationFileName>
       <SourceDependenciesFile>obj\$(TargetName)\</SourceDependenciesFile>
       <BrowseInformationFile>obj\$(TargetName)\</BrowseInformationFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -1629,6 +1632,7 @@
       <XMLDocumentationFileName>obj\$(TargetName)\</XMLDocumentationFileName>
       <SourceDependenciesFile>obj\$(TargetName)\</SourceDependenciesFile>
       <BrowseInformationFile>obj\$(TargetName)\</BrowseInformationFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>
