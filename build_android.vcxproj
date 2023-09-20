@@ -1,0 +1,939 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\aabb.cpp" />
+    <ClCompile Include="src\core\array.cpp" />
+    <ClCompile Include="src\core\basis.cpp" />
+    <ClCompile Include="src\core\camera_matrix.cpp" />
+    <ClCompile Include="src\core\color.cpp" />
+    <ClCompile Include="src\core\dictionary.cpp" />
+    <ClCompile Include="src\core\godot_global.cpp" />
+    <ClCompile Include="src\core\node_path.cpp" />
+    <ClCompile Include="src\core\plane.cpp" />
+    <ClCompile Include="src\core\pool_arrays.cpp" />
+    <ClCompile Include="src\core\quat.cpp" />
+    <ClCompile Include="src\core\rect2.cpp" />
+    <ClCompile Include="src\core\rid.cpp" />
+    <ClCompile Include="src\core\string.cpp" />
+    <ClCompile Include="src\core\tag_db.cpp" />
+    <ClCompile Include="src\core\transform.cpp" />
+    <ClCompile Include="src\core\transform2d.cpp" />
+    <ClCompile Include="src\core\variant.cpp" />
+    <ClCompile Include="src\core\vector2.cpp" />
+    <ClCompile Include="src\core\vector3.cpp" />
+    <ClCompile Include="src\gen\accept_dialog.cpp" />
+    <ClCompile Include="src\gen\aescontext.cpp" />
+    <ClCompile Include="src\gen\animated_sprite.cpp" />
+    <ClCompile Include="src\gen\animated_sprite3d.cpp" />
+    <ClCompile Include="src\gen\animated_texture.cpp" />
+    <ClCompile Include="src\gen\animation.cpp" />
+    <ClCompile Include="src\gen\animation_node.cpp" />
+    <ClCompile Include="src\gen\animation_node_add2.cpp" />
+    <ClCompile Include="src\gen\animation_node_add3.cpp" />
+    <ClCompile Include="src\gen\animation_node_animation.cpp" />
+    <ClCompile Include="src\gen\animation_node_blend2.cpp" />
+    <ClCompile Include="src\gen\animation_node_blend3.cpp" />
+    <ClCompile Include="src\gen\animation_node_blend_space1d.cpp" />
+    <ClCompile Include="src\gen\animation_node_blend_space2d.cpp" />
+    <ClCompile Include="src\gen\animation_node_blend_tree.cpp" />
+    <ClCompile Include="src\gen\animation_node_one_shot.cpp" />
+    <ClCompile Include="src\gen\animation_node_output.cpp" />
+    <ClCompile Include="src\gen\animation_node_state_machine.cpp" />
+    <ClCompile Include="src\gen\animation_node_state_machine_playback.cpp" />
+    <ClCompile Include="src\gen\animation_node_state_machine_transition.cpp" />
+    <ClCompile Include="src\gen\animation_node_time_scale.cpp" />
+    <ClCompile Include="src\gen\animation_node_time_seek.cpp" />
+    <ClCompile Include="src\gen\animation_node_transition.cpp" />
+    <ClCompile Include="src\gen\animation_player.cpp" />
+    <ClCompile Include="src\gen\animation_root_node.cpp" />
+    <ClCompile Include="src\gen\animation_track_edit_plugin.cpp" />
+    <ClCompile Include="src\gen\animation_tree.cpp" />
+    <ClCompile Include="src\gen\animation_tree_player.cpp" />
+    <ClCompile Include="src\gen\area.cpp" />
+    <ClCompile Include="src\gen\area2d.cpp" />
+    <ClCompile Include="src\gen\array_mesh.cpp" />
+    <ClCompile Include="src\gen\arvranchor.cpp" />
+    <ClCompile Include="src\gen\arvrcamera.cpp" />
+    <ClCompile Include="src\gen\arvrcontroller.cpp" />
+    <ClCompile Include="src\gen\arvrinterface.cpp" />
+    <ClCompile Include="src\gen\arvrinterface_gdnative.cpp" />
+    <ClCompile Include="src\gen\arvrorigin.cpp" />
+    <ClCompile Include="src\gen\arvrpositional_tracker.cpp" />
+    <ClCompile Include="src\gen\arvrserver.cpp" />
+    <ClCompile Include="src\gen\aspect_ratio_container.cpp" />
+    <ClCompile Include="src\gen\astar.cpp" />
+    <ClCompile Include="src\gen\astar2d.cpp" />
+    <ClCompile Include="src\gen\atlas_texture.cpp" />
+    <ClCompile Include="src\gen\audio_bus_layout.cpp" />
+    <ClCompile Include="src\gen\audio_effect.cpp" />
+    <ClCompile Include="src\gen\audio_effect_amplify.cpp" />
+    <ClCompile Include="src\gen\audio_effect_band_limit_filter.cpp" />
+    <ClCompile Include="src\gen\audio_effect_band_pass_filter.cpp" />
+    <ClCompile Include="src\gen\audio_effect_capture.cpp" />
+    <ClCompile Include="src\gen\audio_effect_chorus.cpp" />
+    <ClCompile Include="src\gen\audio_effect_compressor.cpp" />
+    <ClCompile Include="src\gen\audio_effect_delay.cpp" />
+    <ClCompile Include="src\gen\audio_effect_distortion.cpp" />
+    <ClCompile Include="src\gen\audio_effect_eq.cpp" />
+    <ClCompile Include="src\gen\audio_effect_eq10.cpp" />
+    <ClCompile Include="src\gen\audio_effect_eq21.cpp" />
+    <ClCompile Include="src\gen\audio_effect_eq6.cpp" />
+    <ClCompile Include="src\gen\audio_effect_filter.cpp" />
+    <ClCompile Include="src\gen\audio_effect_high_pass_filter.cpp" />
+    <ClCompile Include="src\gen\audio_effect_high_shelf_filter.cpp" />
+    <ClCompile Include="src\gen\audio_effect_instance.cpp" />
+    <ClCompile Include="src\gen\audio_effect_limiter.cpp" />
+    <ClCompile Include="src\gen\audio_effect_low_pass_filter.cpp" />
+    <ClCompile Include="src\gen\audio_effect_low_shelf_filter.cpp" />
+    <ClCompile Include="src\gen\audio_effect_notch_filter.cpp" />
+    <ClCompile Include="src\gen\audio_effect_panner.cpp" />
+    <ClCompile Include="src\gen\audio_effect_phaser.cpp" />
+    <ClCompile Include="src\gen\audio_effect_pitch_shift.cpp" />
+    <ClCompile Include="src\gen\audio_effect_record.cpp" />
+    <ClCompile Include="src\gen\audio_effect_reverb.cpp" />
+    <ClCompile Include="src\gen\audio_effect_spectrum_analyzer.cpp" />
+    <ClCompile Include="src\gen\audio_effect_spectrum_analyzer_instance.cpp" />
+    <ClCompile Include="src\gen\audio_effect_stereo_enhance.cpp" />
+    <ClCompile Include="src\gen\audio_server.cpp" />
+    <ClCompile Include="src\gen\audio_stream.cpp" />
+    <ClCompile Include="src\gen\audio_stream_generator.cpp" />
+    <ClCompile Include="src\gen\audio_stream_generator_playback.cpp" />
+    <ClCompile Include="src\gen\audio_stream_microphone.cpp" />
+    <ClCompile Include="src\gen\audio_stream_mp3.cpp" />
+    <ClCompile Include="src\gen\audio_stream_oggvorbis.cpp" />
+    <ClCompile Include="src\gen\audio_stream_playback.cpp" />
+    <ClCompile Include="src\gen\audio_stream_playback_resampled.cpp" />
+    <ClCompile Include="src\gen\audio_stream_player.cpp" />
+    <ClCompile Include="src\gen\audio_stream_player2d.cpp" />
+    <ClCompile Include="src\gen\audio_stream_player3d.cpp" />
+    <ClCompile Include="src\gen\audio_stream_random_pitch.cpp" />
+    <ClCompile Include="src\gen\audio_stream_sample.cpp" />
+    <ClCompile Include="src\gen\back_buffer_copy.cpp" />
+    <ClCompile Include="src\gen\baked_lightmap.cpp" />
+    <ClCompile Include="src\gen\baked_lightmap_data.cpp" />
+    <ClCompile Include="src\gen\base_button.cpp" />
+    <ClCompile Include="src\gen\bitmap_font.cpp" />
+    <ClCompile Include="src\gen\bit_map.cpp" />
+    <ClCompile Include="src\gen\bone2d.cpp" />
+    <ClCompile Include="src\gen\bone_attachment.cpp" />
+    <ClCompile Include="src\gen\box_container.cpp" />
+    <ClCompile Include="src\gen\box_shape.cpp" />
+    <ClCompile Include="src\gen\bullet_physics_server.cpp" />
+    <ClCompile Include="src\gen\button.cpp" />
+    <ClCompile Include="src\gen\button_group.cpp" />
+    <ClCompile Include="src\gen\callback_tweener.cpp" />
+    <ClCompile Include="src\gen\camera.cpp" />
+    <ClCompile Include="src\gen\camera2d.cpp" />
+    <ClCompile Include="src\gen\camera_feed.cpp" />
+    <ClCompile Include="src\gen\camera_server.cpp" />
+    <ClCompile Include="src\gen\camera_texture.cpp" />
+    <ClCompile Include="src\gen\canvas_item.cpp" />
+    <ClCompile Include="src\gen\canvas_item_material.cpp" />
+    <ClCompile Include="src\gen\canvas_layer.cpp" />
+    <ClCompile Include="src\gen\canvas_modulate.cpp" />
+    <ClCompile Include="src\gen\capsule_mesh.cpp" />
+    <ClCompile Include="src\gen\capsule_shape.cpp" />
+    <ClCompile Include="src\gen\capsule_shape2d.cpp" />
+    <ClCompile Include="src\gen\center_container.cpp" />
+    <ClCompile Include="src\gen\char_fxtransform.cpp" />
+    <ClCompile Include="src\gen\check_box.cpp" />
+    <ClCompile Include="src\gen\check_button.cpp" />
+    <ClCompile Include="src\gen\circle_shape2d.cpp" />
+    <ClCompile Include="src\gen\class_db.cpp" />
+    <ClCompile Include="src\gen\clipped_camera.cpp" />
+    <ClCompile Include="src\gen\collision_object.cpp" />
+    <ClCompile Include="src\gen\collision_object2d.cpp" />
+    <ClCompile Include="src\gen\collision_polygon.cpp" />
+    <ClCompile Include="src\gen\collision_polygon2d.cpp" />
+    <ClCompile Include="src\gen\collision_shape.cpp" />
+    <ClCompile Include="src\gen\collision_shape2d.cpp" />
+    <ClCompile Include="src\gen\color_picker.cpp" />
+    <ClCompile Include="src\gen\color_picker_button.cpp" />
+    <ClCompile Include="src\gen\color_rect.cpp" />
+    <ClCompile Include="src\gen\concave_polygon_shape.cpp" />
+    <ClCompile Include="src\gen\concave_polygon_shape2d.cpp" />
+    <ClCompile Include="src\gen\cone_twist_joint.cpp" />
+    <ClCompile Include="src\gen\config_file.cpp" />
+    <ClCompile Include="src\gen\confirmation_dialog.cpp" />
+    <ClCompile Include="src\gen\container.cpp" />
+    <ClCompile Include="src\gen\control.cpp" />
+    <ClCompile Include="src\gen\convex_polygon_shape.cpp" />
+    <ClCompile Include="src\gen\convex_polygon_shape2d.cpp" />
+    <ClCompile Include="src\gen\cpuparticles.cpp" />
+    <ClCompile Include="src\gen\cpuparticles2d.cpp" />
+    <ClCompile Include="src\gen\crypto.cpp" />
+    <ClCompile Include="src\gen\crypto_key.cpp" />
+    <ClCompile Include="src\gen\csgbox.cpp" />
+    <ClCompile Include="src\gen\csgcombiner.cpp" />
+    <ClCompile Include="src\gen\csgcylinder.cpp" />
+    <ClCompile Include="src\gen\csgmesh.cpp" />
+    <ClCompile Include="src\gen\csgpolygon.cpp" />
+    <ClCompile Include="src\gen\csgprimitive.cpp" />
+    <ClCompile Include="src\gen\csgshape.cpp" />
+    <ClCompile Include="src\gen\csgsphere.cpp" />
+    <ClCompile Include="src\gen\csgtorus.cpp" />
+    <ClCompile Include="src\gen\cube_map.cpp" />
+    <ClCompile Include="src\gen\cube_mesh.cpp" />
+    <ClCompile Include="src\gen\cull_instance.cpp" />
+    <ClCompile Include="src\gen\curve.cpp" />
+    <ClCompile Include="src\gen\curve2d.cpp" />
+    <ClCompile Include="src\gen\curve3d.cpp" />
+    <ClCompile Include="src\gen\curve_texture.cpp" />
+    <ClCompile Include="src\gen\cylinder_mesh.cpp" />
+    <ClCompile Include="src\gen\cylinder_shape.cpp" />
+    <ClCompile Include="src\gen\damped_spring_joint2d.cpp" />
+    <ClCompile Include="src\gen\directional_light.cpp" />
+    <ClCompile Include="src\gen\directory.cpp" />
+    <ClCompile Include="src\gen\dtlsserver.cpp" />
+    <ClCompile Include="src\gen\dynamic_font.cpp" />
+    <ClCompile Include="src\gen\dynamic_font_data.cpp" />
+    <ClCompile Include="src\gen\editor_export_plugin.cpp" />
+    <ClCompile Include="src\gen\editor_feature_profile.cpp" />
+    <ClCompile Include="src\gen\editor_file_dialog.cpp" />
+    <ClCompile Include="src\gen\editor_file_system.cpp" />
+    <ClCompile Include="src\gen\editor_file_system_directory.cpp" />
+    <ClCompile Include="src\gen\editor_import_plugin.cpp" />
+    <ClCompile Include="src\gen\editor_inspector.cpp" />
+    <ClCompile Include="src\gen\editor_inspector_plugin.cpp" />
+    <ClCompile Include="src\gen\editor_interface.cpp" />
+    <ClCompile Include="src\gen\editor_plugin.cpp" />
+    <ClCompile Include="src\gen\editor_property.cpp" />
+    <ClCompile Include="src\gen\editor_resource_conversion_plugin.cpp" />
+    <ClCompile Include="src\gen\editor_resource_picker.cpp" />
+    <ClCompile Include="src\gen\editor_resource_preview.cpp" />
+    <ClCompile Include="src\gen\editor_resource_preview_generator.cpp" />
+    <ClCompile Include="src\gen\editor_scene_importer.cpp" />
+    <ClCompile Include="src\gen\editor_scene_importer_fbx.cpp" />
+    <ClCompile Include="src\gen\editor_scene_importer_gltf.cpp" />
+    <ClCompile Include="src\gen\editor_scene_post_import.cpp" />
+    <ClCompile Include="src\gen\editor_script.cpp" />
+    <ClCompile Include="src\gen\editor_script_picker.cpp" />
+    <ClCompile Include="src\gen\editor_selection.cpp" />
+    <ClCompile Include="src\gen\editor_settings.cpp" />
+    <ClCompile Include="src\gen\editor_spatial_gizmo.cpp" />
+    <ClCompile Include="src\gen\editor_spatial_gizmo_plugin.cpp" />
+    <ClCompile Include="src\gen\editor_spin_slider.cpp" />
+    <ClCompile Include="src\gen\editor_vcsinterface.cpp" />
+    <ClCompile Include="src\gen\encoded_object_as_id.cpp" />
+    <ClCompile Include="src\gen\engine.cpp" />
+    <ClCompile Include="src\gen\environment.cpp" />
+    <ClCompile Include="src\gen\expression.cpp" />
+    <ClCompile Include="src\gen\external_texture.cpp" />
+    <ClCompile Include="src\gen\file.cpp" />
+    <ClCompile Include="src\gen\file_dialog.cpp" />
+    <ClCompile Include="src\gen\file_system_dock.cpp" />
+    <ClCompile Include="src\gen\flow_container.cpp" />
+    <ClCompile Include="src\gen\font.cpp" />
+    <ClCompile Include="src\gen\func_ref.cpp" />
+    <ClCompile Include="src\gen\gdnative.cpp" />
+    <ClCompile Include="src\gen\gdnative_library.cpp" />
+    <ClCompile Include="src\gen\gdscript.cpp" />
+    <ClCompile Include="src\gen\gdscript_function_state.cpp" />
+    <ClCompile Include="src\gen\generic6_dofjoint.cpp" />
+    <ClCompile Include="src\gen\geometry.cpp" />
+    <ClCompile Include="src\gen\geometry_instance.cpp" />
+    <ClCompile Include="src\gen\giprobe.cpp" />
+    <ClCompile Include="src\gen\giprobe_data.cpp" />
+    <ClCompile Include="src\gen\global_constants.cpp" />
+    <ClCompile Include="src\gen\gltfaccessor.cpp" />
+    <ClCompile Include="src\gen\gltfanimation.cpp" />
+    <ClCompile Include="src\gen\gltfbuffer_view.cpp" />
+    <ClCompile Include="src\gen\gltfcamera.cpp" />
+    <ClCompile Include="src\gen\gltfdocument.cpp" />
+    <ClCompile Include="src\gen\gltflight.cpp" />
+    <ClCompile Include="src\gen\gltfmesh.cpp" />
+    <ClCompile Include="src\gen\gltfnode.cpp" />
+    <ClCompile Include="src\gen\gltfskeleton.cpp" />
+    <ClCompile Include="src\gen\gltfskin.cpp" />
+    <ClCompile Include="src\gen\gltfspec_gloss.cpp" />
+    <ClCompile Include="src\gen\gltfstate.cpp" />
+    <ClCompile Include="src\gen\gltftexture.cpp" />
+    <ClCompile Include="src\gen\gradient.cpp" />
+    <ClCompile Include="src\gen\gradient_texture.cpp" />
+    <ClCompile Include="src\gen\gradient_texture2d.cpp" />
+    <ClCompile Include="src\gen\graph_edit.cpp" />
+    <ClCompile Include="src\gen\graph_node.cpp" />
+    <ClCompile Include="src\gen\grid_container.cpp" />
+    <ClCompile Include="src\gen\grid_map.cpp" />
+    <ClCompile Include="src\gen\groove_joint2d.cpp" />
+    <ClCompile Include="src\gen\hashing_context.cpp" />
+    <ClCompile Include="src\gen\hbox_container.cpp" />
+    <ClCompile Include="src\gen\height_map_shape.cpp" />
+    <ClCompile Include="src\gen\hflow_container.cpp" />
+    <ClCompile Include="src\gen\hinge_joint.cpp" />
+    <ClCompile Include="src\gen\hmaccontext.cpp" />
+    <ClCompile Include="src\gen\hscroll_bar.cpp" />
+    <ClCompile Include="src\gen\hseparator.cpp" />
+    <ClCompile Include="src\gen\hslider.cpp" />
+    <ClCompile Include="src\gen\hsplit_container.cpp" />
+    <ClCompile Include="src\gen\httpclient.cpp" />
+    <ClCompile Include="src\gen\httprequest.cpp" />
+    <ClCompile Include="src\gen\image.cpp" />
+    <ClCompile Include="src\gen\image_texture.cpp" />
+    <ClCompile Include="src\gen\immediate_geometry.cpp" />
+    <ClCompile Include="src\gen\input.cpp" />
+    <ClCompile Include="src\gen\input_default.cpp" />
+    <ClCompile Include="src\gen\input_event.cpp" />
+    <ClCompile Include="src\gen\input_event_action.cpp" />
+    <ClCompile Include="src\gen\input_event_gesture.cpp" />
+    <ClCompile Include="src\gen\input_event_joypad_button.cpp" />
+    <ClCompile Include="src\gen\input_event_joypad_motion.cpp" />
+    <ClCompile Include="src\gen\input_event_key.cpp" />
+    <ClCompile Include="src\gen\input_event_magnify_gesture.cpp" />
+    <ClCompile Include="src\gen\input_event_midi.cpp" />
+    <ClCompile Include="src\gen\input_event_mouse.cpp" />
+    <ClCompile Include="src\gen\input_event_mouse_button.cpp" />
+    <ClCompile Include="src\gen\input_event_mouse_motion.cpp" />
+    <ClCompile Include="src\gen\input_event_pan_gesture.cpp" />
+    <ClCompile Include="src\gen\input_event_screen_drag.cpp" />
+    <ClCompile Include="src\gen\input_event_screen_touch.cpp" />
+    <ClCompile Include="src\gen\input_event_with_modifiers.cpp" />
+    <ClCompile Include="src\gen\input_map.cpp" />
+    <ClCompile Include="src\gen\instance_placeholder.cpp" />
+    <ClCompile Include="src\gen\interpolated_camera.cpp" />
+    <ClCompile Include="src\gen\interval_tweener.cpp" />
+    <ClCompile Include="src\gen\ip.cpp" />
+    <ClCompile Include="src\gen\IP_Unix.cpp" />
+    <ClCompile Include="src\gen\item_list.cpp" />
+    <ClCompile Include="src\gen\java_class.cpp" />
+    <ClCompile Include="src\gen\java_class_wrapper.cpp" />
+    <ClCompile Include="src\gen\java_script.cpp" />
+    <ClCompile Include="src\gen\java_script_object.cpp" />
+    <ClCompile Include="src\gen\jnisingleton.cpp" />
+    <ClCompile Include="src\gen\joint.cpp" />
+    <ClCompile Include="src\gen\joint2d.cpp" />
+    <ClCompile Include="src\gen\json.cpp" />
+    <ClCompile Include="src\gen\jsonparse_result.cpp" />
+    <ClCompile Include="src\gen\jsonrpc.cpp" />
+    <ClCompile Include="src\gen\kinematic_body.cpp" />
+    <ClCompile Include="src\gen\kinematic_body2d.cpp" />
+    <ClCompile Include="src\gen\kinematic_collision.cpp" />
+    <ClCompile Include="src\gen\kinematic_collision2d.cpp" />
+    <ClCompile Include="src\gen\label.cpp" />
+    <ClCompile Include="src\gen\label3d.cpp" />
+    <ClCompile Include="src\gen\large_texture.cpp" />
+    <ClCompile Include="src\gen\light.cpp" />
+    <ClCompile Include="src\gen\light2d.cpp" />
+    <ClCompile Include="src\gen\light_occluder2d.cpp" />
+    <ClCompile Include="src\gen\line2d.cpp" />
+    <ClCompile Include="src\gen\line_edit.cpp" />
+    <ClCompile Include="src\gen\line_shape2d.cpp" />
+    <ClCompile Include="src\gen\link_button.cpp" />
+    <ClCompile Include="src\gen\listener.cpp" />
+    <ClCompile Include="src\gen\listener2d.cpp" />
+    <ClCompile Include="src\gen\main_loop.cpp" />
+    <ClCompile Include="src\gen\margin_container.cpp" />
+    <ClCompile Include="src\gen\marshalls.cpp" />
+    <ClCompile Include="src\gen\material.cpp" />
+    <ClCompile Include="src\gen\menu_button.cpp" />
+    <ClCompile Include="src\gen\mesh.cpp" />
+    <ClCompile Include="src\gen\mesh_data_tool.cpp" />
+    <ClCompile Include="src\gen\mesh_instance.cpp" />
+    <ClCompile Include="src\gen\mesh_instance2d.cpp" />
+    <ClCompile Include="src\gen\mesh_library.cpp" />
+    <ClCompile Include="src\gen\mesh_texture.cpp" />
+    <ClCompile Include="src\gen\method_tweener.cpp" />
+    <ClCompile Include="src\gen\mobile_vrinterface.cpp" />
+    <ClCompile Include="src\gen\multiplayer_api.cpp" />
+    <ClCompile Include="src\gen\multiplayer_peer_gdnative.cpp" />
+    <ClCompile Include="src\gen\multi_mesh.cpp" />
+    <ClCompile Include="src\gen\multi_mesh_instance.cpp" />
+    <ClCompile Include="src\gen\multi_mesh_instance2d.cpp" />
+    <ClCompile Include="src\gen\mutex.cpp" />
+    <ClCompile Include="src\gen\native_script.cpp" />
+    <ClCompile Include="src\gen\navigation.cpp" />
+    <ClCompile Include="src\gen\navigation2d.cpp" />
+    <ClCompile Include="src\gen\navigation2_dserver.cpp" />
+    <ClCompile Include="src\gen\navigation_agent.cpp" />
+    <ClCompile Include="src\gen\navigation_agent2d.cpp" />
+    <ClCompile Include="src\gen\navigation_mesh.cpp" />
+    <ClCompile Include="src\gen\navigation_mesh_generator.cpp" />
+    <ClCompile Include="src\gen\navigation_mesh_instance.cpp" />
+    <ClCompile Include="src\gen\navigation_obstacle.cpp" />
+    <ClCompile Include="src\gen\navigation_obstacle2d.cpp" />
+    <ClCompile Include="src\gen\navigation_polygon.cpp" />
+    <ClCompile Include="src\gen\navigation_polygon_instance.cpp" />
+    <ClCompile Include="src\gen\navigation_server.cpp" />
+    <ClCompile Include="src\gen\networked_multiplayer_custom.cpp" />
+    <ClCompile Include="src\gen\networked_multiplayer_enet.cpp" />
+    <ClCompile Include="src\gen\networked_multiplayer_peer.cpp" />
+    <ClCompile Include="src\gen\nine_patch_rect.cpp" />
+    <ClCompile Include="src\gen\node.cpp" />
+    <ClCompile Include="src\gen\node2d.cpp" />
+    <ClCompile Include="src\gen\noise_texture.cpp" />
+    <ClCompile Include="src\gen\object.cpp" />
+    <ClCompile Include="src\gen\occluder.cpp" />
+    <ClCompile Include="src\gen\occluder_polygon2d.cpp" />
+    <ClCompile Include="src\gen\occluder_shape.cpp" />
+    <ClCompile Include="src\gen\occluder_shape_polygon.cpp" />
+    <ClCompile Include="src\gen\occluder_shape_sphere.cpp" />
+    <ClCompile Include="src\gen\omni_light.cpp" />
+    <ClCompile Include="src\gen\open_simplex_noise.cpp" />
+    <ClCompile Include="src\gen\option_button.cpp" />
+    <ClCompile Include="src\gen\os.cpp" />
+    <ClCompile Include="src\gen\packed_data_container.cpp" />
+    <ClCompile Include="src\gen\packed_data_container_ref.cpp" />
+    <ClCompile Include="src\gen\packed_scene.cpp" />
+    <ClCompile Include="src\gen\packed_scene_gltf.cpp" />
+    <ClCompile Include="src\gen\packet_peer.cpp" />
+    <ClCompile Include="src\gen\packet_peer_dtls.cpp" />
+    <ClCompile Include="src\gen\packet_peer_gdnative.cpp" />
+    <ClCompile Include="src\gen\packet_peer_stream.cpp" />
+    <ClCompile Include="src\gen\packet_peer_udp.cpp" />
+    <ClCompile Include="src\gen\panel.cpp" />
+    <ClCompile Include="src\gen\panel_container.cpp" />
+    <ClCompile Include="src\gen\panorama_sky.cpp" />
+    <ClCompile Include="src\gen\parallax_background.cpp" />
+    <ClCompile Include="src\gen\parallax_layer.cpp" />
+    <ClCompile Include="src\gen\particles.cpp" />
+    <ClCompile Include="src\gen\particles2d.cpp" />
+    <ClCompile Include="src\gen\particles_material.cpp" />
+    <ClCompile Include="src\gen\path.cpp" />
+    <ClCompile Include="src\gen\path2d.cpp" />
+    <ClCompile Include="src\gen\path_follow.cpp" />
+    <ClCompile Include="src\gen\path_follow2d.cpp" />
+    <ClCompile Include="src\gen\pckpacker.cpp" />
+    <ClCompile Include="src\gen\performance.cpp" />
+    <ClCompile Include="src\gen\phash_translation.cpp" />
+    <ClCompile Include="src\gen\physical_bone.cpp" />
+    <ClCompile Include="src\gen\physics2_ddirect_body_state.cpp" />
+    <ClCompile Include="src\gen\physics2_ddirect_space_state.cpp" />
+    <ClCompile Include="src\gen\physics2_dserver.cpp" />
+    <ClCompile Include="src\gen\physics2_dserver_sw.cpp" />
+    <ClCompile Include="src\gen\physics2_dshape_query_parameters.cpp" />
+    <ClCompile Include="src\gen\physics2_dtest_motion_result.cpp" />
+    <ClCompile Include="src\gen\physics_body.cpp" />
+    <ClCompile Include="src\gen\physics_body2d.cpp" />
+    <ClCompile Include="src\gen\physics_direct_body_state.cpp" />
+    <ClCompile Include="src\gen\physics_direct_space_state.cpp" />
+    <ClCompile Include="src\gen\physics_material.cpp" />
+    <ClCompile Include="src\gen\physics_server.cpp" />
+    <ClCompile Include="src\gen\physics_shape_query_parameters.cpp" />
+    <ClCompile Include="src\gen\physics_test_motion_result.cpp" />
+    <ClCompile Include="src\gen\pin_joint.cpp" />
+    <ClCompile Include="src\gen\pin_joint2d.cpp" />
+    <ClCompile Include="src\gen\plane_mesh.cpp" />
+    <ClCompile Include="src\gen\plane_shape.cpp" />
+    <ClCompile Include="src\gen\plugin_script.cpp" />
+    <ClCompile Include="src\gen\point_mesh.cpp" />
+    <ClCompile Include="src\gen\polygon2d.cpp" />
+    <ClCompile Include="src\gen\polygon_path_finder.cpp" />
+    <ClCompile Include="src\gen\popup.cpp" />
+    <ClCompile Include="src\gen\popup_dialog.cpp" />
+    <ClCompile Include="src\gen\popup_menu.cpp" />
+    <ClCompile Include="src\gen\popup_panel.cpp" />
+    <ClCompile Include="src\gen\portal.cpp" />
+    <ClCompile Include="src\gen\position2d.cpp" />
+    <ClCompile Include="src\gen\position3d.cpp" />
+    <ClCompile Include="src\gen\primitive_mesh.cpp" />
+    <ClCompile Include="src\gen\prism_mesh.cpp" />
+    <ClCompile Include="src\gen\procedural_sky.cpp" />
+    <ClCompile Include="src\gen\progress_bar.cpp" />
+    <ClCompile Include="src\gen\project_settings.cpp" />
+    <ClCompile Include="src\gen\property_tweener.cpp" />
+    <ClCompile Include="src\gen\proximity_group.cpp" />
+    <ClCompile Include="src\gen\proxy_texture.cpp" />
+    <ClCompile Include="src\gen\quad_mesh.cpp" />
+    <ClCompile Include="src\gen\random_number_generator.cpp" />
+    <ClCompile Include="src\gen\range.cpp" />
+    <ClCompile Include="src\gen\ray_cast.cpp" />
+    <ClCompile Include="src\gen\ray_cast2d.cpp" />
+    <ClCompile Include="src\gen\ray_shape.cpp" />
+    <ClCompile Include="src\gen\ray_shape2d.cpp" />
+    <ClCompile Include="src\gen\rectangle_shape2d.cpp" />
+    <ClCompile Include="src\gen\reference.cpp" />
+    <ClCompile Include="src\gen\reference_rect.cpp" />
+    <ClCompile Include="src\gen\reflection_probe.cpp" />
+    <ClCompile Include="src\gen\reg_ex.cpp" />
+    <ClCompile Include="src\gen\reg_ex_match.cpp" />
+    <ClCompile Include="src\gen\remote_transform.cpp" />
+    <ClCompile Include="src\gen\remote_transform2d.cpp" />
+    <ClCompile Include="src\gen\resource.cpp" />
+    <ClCompile Include="src\gen\resource_format_loader.cpp" />
+    <ClCompile Include="src\gen\resource_format_saver.cpp" />
+    <ClCompile Include="src\gen\resource_importer.cpp" />
+    <ClCompile Include="src\gen\resource_interactive_loader.cpp" />
+    <ClCompile Include="src\gen\resource_loader.cpp" />
+    <ClCompile Include="src\gen\resource_preloader.cpp" />
+    <ClCompile Include="src\gen\resource_saver.cpp" />
+    <ClCompile Include="src\gen\rich_text_effect.cpp" />
+    <ClCompile Include="src\gen\rich_text_label.cpp" />
+    <ClCompile Include="src\gen\rigid_body.cpp" />
+    <ClCompile Include="src\gen\rigid_body2d.cpp" />
+    <ClCompile Include="src\gen\room.cpp" />
+    <ClCompile Include="src\gen\room_group.cpp" />
+    <ClCompile Include="src\gen\room_manager.cpp" />
+    <ClCompile Include="src\gen\root_motion_view.cpp" />
+    <ClCompile Include="src\gen\scene_state.cpp" />
+    <ClCompile Include="src\gen\scene_tree.cpp" />
+    <ClCompile Include="src\gen\scene_tree_timer.cpp" />
+    <ClCompile Include="src\gen\scene_tree_tween.cpp" />
+    <ClCompile Include="src\gen\script.cpp" />
+    <ClCompile Include="src\gen\script_create_dialog.cpp" />
+    <ClCompile Include="src\gen\script_editor.cpp" />
+    <ClCompile Include="src\gen\scroll_bar.cpp" />
+    <ClCompile Include="src\gen\scroll_container.cpp" />
+    <ClCompile Include="src\gen\segment_shape2d.cpp" />
+    <ClCompile Include="src\gen\semaphore.cpp" />
+    <ClCompile Include="src\gen\separator.cpp" />
+    <ClCompile Include="src\gen\shader.cpp" />
+    <ClCompile Include="src\gen\shader_material.cpp" />
+    <ClCompile Include="src\gen\shape.cpp" />
+    <ClCompile Include="src\gen\shape2d.cpp" />
+    <ClCompile Include="src\gen\short_cut.cpp" />
+    <ClCompile Include="src\gen\skeleton.cpp" />
+    <ClCompile Include="src\gen\skeleton2d.cpp" />
+    <ClCompile Include="src\gen\skeleton_ik.cpp" />
+    <ClCompile Include="src\gen\skin.cpp" />
+    <ClCompile Include="src\gen\skin_reference.cpp" />
+    <ClCompile Include="src\gen\sky.cpp" />
+    <ClCompile Include="src\gen\slider.cpp" />
+    <ClCompile Include="src\gen\slider_joint.cpp" />
+    <ClCompile Include="src\gen\soft_body.cpp" />
+    <ClCompile Include="src\gen\spatial.cpp" />
+    <ClCompile Include="src\gen\spatial_gizmo.cpp" />
+    <ClCompile Include="src\gen\spatial_material.cpp" />
+    <ClCompile Include="src\gen\spatial_velocity_tracker.cpp" />
+    <ClCompile Include="src\gen\sphere_mesh.cpp" />
+    <ClCompile Include="src\gen\sphere_shape.cpp" />
+    <ClCompile Include="src\gen\spin_box.cpp" />
+    <ClCompile Include="src\gen\split_container.cpp" />
+    <ClCompile Include="src\gen\spot_light.cpp" />
+    <ClCompile Include="src\gen\spring_arm.cpp" />
+    <ClCompile Include="src\gen\sprite.cpp" />
+    <ClCompile Include="src\gen\sprite3d.cpp" />
+    <ClCompile Include="src\gen\sprite_base3d.cpp" />
+    <ClCompile Include="src\gen\sprite_frames.cpp" />
+    <ClCompile Include="src\gen\static_body.cpp" />
+    <ClCompile Include="src\gen\static_body2d.cpp" />
+    <ClCompile Include="src\gen\stream_peer.cpp" />
+    <ClCompile Include="src\gen\stream_peer_buffer.cpp" />
+    <ClCompile Include="src\gen\stream_peer_gdnative.cpp" />
+    <ClCompile Include="src\gen\stream_peer_ssl.cpp" />
+    <ClCompile Include="src\gen\stream_peer_tcp.cpp" />
+    <ClCompile Include="src\gen\stream_texture.cpp" />
+    <ClCompile Include="src\gen\style_box.cpp" />
+    <ClCompile Include="src\gen\style_box_empty.cpp" />
+    <ClCompile Include="src\gen\style_box_flat.cpp" />
+    <ClCompile Include="src\gen\style_box_line.cpp" />
+    <ClCompile Include="src\gen\style_box_texture.cpp" />
+    <ClCompile Include="src\gen\surface_tool.cpp" />
+    <ClCompile Include="src\gen\tabs.cpp" />
+    <ClCompile Include="src\gen\tab_container.cpp" />
+    <ClCompile Include="src\gen\TCP_Server.cpp" />
+    <ClCompile Include="src\gen\texture.cpp" />
+    <ClCompile Include="src\gen\texture3d.cpp" />
+    <ClCompile Include="src\gen\texture_array.cpp" />
+    <ClCompile Include="src\gen\texture_button.cpp" />
+    <ClCompile Include="src\gen\texture_layered.cpp" />
+    <ClCompile Include="src\gen\texture_progress.cpp" />
+    <ClCompile Include="src\gen\texture_rect.cpp" />
+    <ClCompile Include="src\gen\text_edit.cpp" />
+    <ClCompile Include="src\gen\text_file.cpp" />
+    <ClCompile Include="src\gen\text_mesh.cpp" />
+    <ClCompile Include="src\gen\theme.cpp" />
+    <ClCompile Include="src\gen\thread.cpp" />
+    <ClCompile Include="src\gen\tile_map.cpp" />
+    <ClCompile Include="src\gen\tile_set.cpp" />
+    <ClCompile Include="src\gen\time.cpp" />
+    <ClCompile Include="src\gen\timer.cpp" />
+    <ClCompile Include="src\gen\tool_button.cpp" />
+    <ClCompile Include="src\gen\touch_screen_button.cpp" />
+    <ClCompile Include="src\gen\translation.cpp" />
+    <ClCompile Include="src\gen\translation_server.cpp" />
+    <ClCompile Include="src\gen\tree.cpp" />
+    <ClCompile Include="src\gen\tree_item.cpp" />
+    <ClCompile Include="src\gen\triangle_mesh.cpp" />
+    <ClCompile Include="src\gen\tween.cpp" />
+    <ClCompile Include="src\gen\tweener.cpp" />
+    <ClCompile Include="src\gen\udpserver.cpp" />
+    <ClCompile Include="src\gen\undo_redo.cpp" />
+    <ClCompile Include="src\gen\upnp.cpp" />
+    <ClCompile Include="src\gen\upnpdevice.cpp" />
+    <ClCompile Include="src\gen\vbox_container.cpp" />
+    <ClCompile Include="src\gen\vehicle_body.cpp" />
+    <ClCompile Include="src\gen\vehicle_wheel.cpp" />
+    <ClCompile Include="src\gen\vflow_container.cpp" />
+    <ClCompile Include="src\gen\video_player.cpp" />
+    <ClCompile Include="src\gen\video_stream.cpp" />
+    <ClCompile Include="src\gen\video_stream_gdnative.cpp" />
+    <ClCompile Include="src\gen\video_stream_theora.cpp" />
+    <ClCompile Include="src\gen\video_stream_webm.cpp" />
+    <ClCompile Include="src\gen\viewport.cpp" />
+    <ClCompile Include="src\gen\viewport_container.cpp" />
+    <ClCompile Include="src\gen\viewport_texture.cpp" />
+    <ClCompile Include="src\gen\visibility_enabler.cpp" />
+    <ClCompile Include="src\gen\visibility_enabler2d.cpp" />
+    <ClCompile Include="src\gen\visibility_notifier.cpp" />
+    <ClCompile Include="src\gen\visibility_notifier2d.cpp" />
+    <ClCompile Include="src\gen\visual_instance.cpp" />
+    <ClCompile Include="src\gen\visual_script.cpp" />
+    <ClCompile Include="src\gen\visual_script_basic_type_constant.cpp" />
+    <ClCompile Include="src\gen\visual_script_builtin_func.cpp" />
+    <ClCompile Include="src\gen\visual_script_class_constant.cpp" />
+    <ClCompile Include="src\gen\visual_script_comment.cpp" />
+    <ClCompile Include="src\gen\visual_script_compose_array.cpp" />
+    <ClCompile Include="src\gen\visual_script_condition.cpp" />
+    <ClCompile Include="src\gen\visual_script_constant.cpp" />
+    <ClCompile Include="src\gen\visual_script_constructor.cpp" />
+    <ClCompile Include="src\gen\visual_script_custom_node.cpp" />
+    <ClCompile Include="src\gen\visual_script_deconstruct.cpp" />
+    <ClCompile Include="src\gen\visual_script_editor.cpp" />
+    <ClCompile Include="src\gen\visual_script_emit_signal.cpp" />
+    <ClCompile Include="src\gen\visual_script_engine_singleton.cpp" />
+    <ClCompile Include="src\gen\visual_script_expression.cpp" />
+    <ClCompile Include="src\gen\visual_script_function.cpp" />
+    <ClCompile Include="src\gen\visual_script_function_call.cpp" />
+    <ClCompile Include="src\gen\visual_script_function_state.cpp" />
+    <ClCompile Include="src\gen\visual_script_global_constant.cpp" />
+    <ClCompile Include="src\gen\visual_script_index_get.cpp" />
+    <ClCompile Include="src\gen\visual_script_index_set.cpp" />
+    <ClCompile Include="src\gen\visual_script_input_action.cpp" />
+    <ClCompile Include="src\gen\visual_script_iterator.cpp" />
+    <ClCompile Include="src\gen\visual_script_lists.cpp" />
+    <ClCompile Include="src\gen\visual_script_local_var.cpp" />
+    <ClCompile Include="src\gen\visual_script_local_var_set.cpp" />
+    <ClCompile Include="src\gen\visual_script_math_constant.cpp" />
+    <ClCompile Include="src\gen\visual_script_node.cpp" />
+    <ClCompile Include="src\gen\visual_script_operator.cpp" />
+    <ClCompile Include="src\gen\visual_script_preload.cpp" />
+    <ClCompile Include="src\gen\visual_script_property_get.cpp" />
+    <ClCompile Include="src\gen\visual_script_property_set.cpp" />
+    <ClCompile Include="src\gen\visual_script_resource_path.cpp" />
+    <ClCompile Include="src\gen\visual_script_return.cpp" />
+    <ClCompile Include="src\gen\visual_script_scene_node.cpp" />
+    <ClCompile Include="src\gen\visual_script_scene_tree.cpp" />
+    <ClCompile Include="src\gen\visual_script_select.cpp" />
+    <ClCompile Include="src\gen\visual_script_self.cpp" />
+    <ClCompile Include="src\gen\visual_script_sequence.cpp" />
+    <ClCompile Include="src\gen\visual_script_sub_call.cpp" />
+    <ClCompile Include="src\gen\visual_script_switch.cpp" />
+    <ClCompile Include="src\gen\visual_script_type_cast.cpp" />
+    <ClCompile Include="src\gen\visual_script_variable_get.cpp" />
+    <ClCompile Include="src\gen\visual_script_variable_set.cpp" />
+    <ClCompile Include="src\gen\visual_script_while.cpp" />
+    <ClCompile Include="src\gen\visual_script_yield.cpp" />
+    <ClCompile Include="src\gen\visual_script_yield_signal.cpp" />
+    <ClCompile Include="src\gen\visual_server.cpp" />
+    <ClCompile Include="src\gen\visual_shader.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_boolean_constant.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_boolean_uniform.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_color_constant.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_color_func.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_color_op.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_color_uniform.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_compare.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_cube_map.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_cube_map_uniform.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_custom.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_determinant.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_dot_product.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_expression.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_face_forward.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_fresnel.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_global_expression.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_group_base.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_if.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_input.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_is.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_outer_product.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_output.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_scalar_clamp.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_scalar_constant.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_scalar_derivative_func.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_scalar_func.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_scalar_interp.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_scalar_op.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_scalar_smooth_step.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_scalar_switch.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_scalar_uniform.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_switch.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_texture.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_texture_uniform.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_texture_uniform_triplanar.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_transform_compose.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_transform_constant.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_transform_decompose.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_transform_func.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_transform_mult.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_transform_uniform.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_transform_vec_mult.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_uniform.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_uniform_ref.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vec3_constant.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vec3_uniform.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vector_clamp.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vector_compose.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vector_decompose.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vector_derivative_func.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vector_distance.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vector_func.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vector_interp.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vector_len.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vector_op.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vector_refract.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vector_scalar_mix.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vector_scalar_smooth_step.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vector_scalar_step.cpp" />
+    <ClCompile Include="src\gen\visual_shader_node_vector_smooth_step.cpp" />
+    <ClCompile Include="src\gen\vscroll_bar.cpp" />
+    <ClCompile Include="src\gen\vseparator.cpp" />
+    <ClCompile Include="src\gen\vslider.cpp" />
+    <ClCompile Include="src\gen\vsplit_container.cpp" />
+    <ClCompile Include="src\gen\weak_ref.cpp" />
+    <ClCompile Include="src\gen\web_rtcdata_channel.cpp" />
+    <ClCompile Include="src\gen\web_rtcdata_channel_gdnative.cpp" />
+    <ClCompile Include="src\gen\web_rtcmultiplayer.cpp" />
+    <ClCompile Include="src\gen\web_rtcpeer_connection.cpp" />
+    <ClCompile Include="src\gen\web_rtcpeer_connection_gdnative.cpp" />
+    <ClCompile Include="src\gen\web_socket_client.cpp" />
+    <ClCompile Include="src\gen\web_socket_multiplayer_peer.cpp" />
+    <ClCompile Include="src\gen\web_socket_peer.cpp" />
+    <ClCompile Include="src\gen\web_socket_server.cpp" />
+    <ClCompile Include="src\gen\web_xrinterface.cpp" />
+    <ClCompile Include="src\gen\window_dialog.cpp" />
+    <ClCompile Include="src\gen\world.cpp" />
+    <ClCompile Include="src\gen\world2d.cpp" />
+    <ClCompile Include="src\gen\world_environment.cpp" />
+    <ClCompile Include="src\gen\x509_certificate.cpp" />
+    <ClCompile Include="src\gen\xmlparser.cpp" />
+    <ClCompile Include="src\gen\ysort.cpp" />
+    <ClCompile Include="src\gen\__init_method_bindings.cpp" />
+    <ClCompile Include="src\gen\__register_types.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{c0ecbc08-9b8b-4d68-9f70-836f15f5fa59}</ProjectGuid>
+    <Keyword>Android</Keyword>
+    <RootNamespace>build_android</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ApplicationType>Android</ApplicationType>
+    <ApplicationTypeRevision>3.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
+    <TargetName>libandroid-debug-x64</TargetName>
+    <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <UseMultiToolTask>true</UseMultiToolTask>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
+    <TargetName>libandroid-release-x64</TargetName>
+    <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <UseMultiToolTask>true</UseMultiToolTask>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
+    <TargetName>libandroid-debug-x86</TargetName>
+    <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <UseMultiToolTask>true</UseMultiToolTask>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
+    <TargetName>libandroid-release-x86</TargetName>
+    <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <UseMultiToolTask>true</UseMultiToolTask>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
+    <TargetName>libandroid-debug-arm64</TargetName>
+    <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <UseMultiToolTask>true</UseMultiToolTask>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
+    <TargetName>libandroid-release-arm64</TargetName>
+    <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <UseMultiToolTask>true</UseMultiToolTask>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
+    <TargetName>libandroid-debug-arm</TargetName>
+    <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <UseMultiToolTask>true</UseMultiToolTask>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
+    <TargetName>libandroid-release-arm</TargetName>
+    <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <UseMultiToolTask>true</UseMultiToolTask>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <CppLanguageStandard>c++14</CppLanguageStandard>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <ObjectFileName>obj\$(TargetName)\%(RelativeDir)%(filename).o</ObjectFileName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <CppLanguageStandard>c++14</CppLanguageStandard>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <ObjectFileName>obj\$(TargetName)\%(RelativeDir)%(filename).o</ObjectFileName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <CppLanguageStandard>c++14</CppLanguageStandard>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <ObjectFileName>obj\$(TargetName)\%(RelativeDir)%(filename).o</ObjectFileName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <CppLanguageStandard>c++14</CppLanguageStandard>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <ObjectFileName>obj\$(TargetName)\%(RelativeDir)%(filename).o</ObjectFileName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <CppLanguageStandard>c++14</CppLanguageStandard>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <ObjectFileName>obj\$(TargetName)\%(RelativeDir)%(filename).o</ObjectFileName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <CppLanguageStandard>c++14</CppLanguageStandard>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <ObjectFileName>obj\$(TargetName)\%(RelativeDir)%(filename).o</ObjectFileName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <CppLanguageStandard>c++14</CppLanguageStandard>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <ObjectFileName>obj\$(TargetName)\%(RelativeDir)%(filename).o</ObjectFileName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <CppLanguageStandard>c++14</CppLanguageStandard>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <ObjectFileName>obj\$(TargetName)\%(RelativeDir)%(filename).o</ObjectFileName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
