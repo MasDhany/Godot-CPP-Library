@@ -1,4 +1,5 @@
-# Godot-CPP-Library
-For building static library
+1. Run the converter to get godot header/source files in snake case.
+2. Move godot header/source files from the converter to Godot CPP Library
+3. Build
 
-Converter: [Godot-CPP-Snake-Case](https://github.com/MasDhany/Godot-CPP-Snake-Case/tree/64cb0c9930791a725ae134c846368fa6aecd3995)
+Converter: [Godot-CPP-Snake-Case](https://github.com/MasDhany/Godot-CPP-Snake-Case/tree/3807f18653f47b88b977542bb6b7eca6cb6853f6)
