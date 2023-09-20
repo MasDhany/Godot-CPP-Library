@@ -792,56 +792,56 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>obj\$(TargetName)\</IntDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
     <TargetName>libandroid-debug-x64</TargetName>
     <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
     <UseMultiToolTask>true</UseMultiToolTask>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>obj\$(TargetName)\</IntDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
     <TargetName>libandroid-release-x64</TargetName>
     <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
     <UseMultiToolTask>true</UseMultiToolTask>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>obj\$(TargetName)\</IntDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
     <TargetName>libandroid-debug-x86</TargetName>
     <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
     <UseMultiToolTask>true</UseMultiToolTask>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>obj\$(TargetName)\</IntDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
     <TargetName>libandroid-release-x86</TargetName>
     <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
     <UseMultiToolTask>true</UseMultiToolTask>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>obj\$(TargetName)\</IntDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
     <TargetName>libandroid-debug-arm64</TargetName>
     <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
     <UseMultiToolTask>true</UseMultiToolTask>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>obj\$(TargetName)\</IntDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
     <TargetName>libandroid-release-arm64</TargetName>
     <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
     <UseMultiToolTask>true</UseMultiToolTask>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>obj\$(TargetName)\</IntDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
     <TargetName>libandroid-debug-arm</TargetName>
     <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
     <UseMultiToolTask>true</UseMultiToolTask>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>obj\$(TargetName)\</IntDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
     <TargetName>libandroid-release-arm</TargetName>
     <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
     <UseMultiToolTask>true</UseMultiToolTask>

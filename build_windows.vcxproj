@@ -776,28 +776,28 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>obj\$(TargetName)\</IntDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
     <TargetName>libwindows-debug-32</TargetName>
     <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>obj\$(TargetName)\</IntDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
     <TargetName>libwindows-release-32</TargetName>
     <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>obj\$(TargetName)\</IntDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
     <TargetName>libwindows-debug-64</TargetName>
     <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>obj\$(TargetName)\</IntDir>
+    <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
     <TargetName>libwindows-release-64</TargetName>
     <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
   </PropertyGroup>
