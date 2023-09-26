@@ -1,10 +1,10 @@
 @echo off
 
-copy dev.vcxitems build.files.vcxitems /y
+copy dev.vcxitems.filters build.files.vcxitems.filters /y
 
 setlocal enableextensions disabledelayedexpansion
 
-set "filename=build.files.vcxitems"
+set "filename=build.files.vcxitems.filters"
 
 set "search="$(MSBuildThisFileDirectory)"
 set "replace=""
@@ -18,10 +18,11 @@ for /f "delims=" %%i in ('type "%filename%" ^& break ^> "%filename%" ') do (
 	if "!line:</ClInclude>=!"=="!line!" (
 	if "!line:<None=!"=="!line!" (
 	if "!line:</None>=!"=="!line!" (
-	if "!line:<ItemsProjectGuid>=!"=="!line!" (
-	if "!line:UniqueIdentifier>=!"=="!line!" (
+	if "!line:<Filter=!"=="!line!" (
+	if "!line:Filter>=!"=="!line!" (
+	if "!line:<UniqueIdentifier>=!"=="!line!" (
 		>>"%filename%" echo(!line:%search%=%replace%!
-	))))))
+	)))))))
 		
 	endlocal
 )
