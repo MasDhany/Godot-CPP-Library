@@ -60,16 +60,16 @@
     <Import Project="build.files.vcxitems" Label="Shared" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="property.general.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="property.general.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="property.general.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="property.general.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -77,28 +77,24 @@
     <OutDir>$(SolutionDir)bin\</OutDir>
     <IntDir>obj\libwindows-debug-32\</IntDir>
     <TargetName>libwindows-debug-32</TargetName>
-    <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
     <IntDir>obj\libwindows-release-32\</IntDir>
     <TargetName>libwindows-release-32</TargetName>
-    <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
     <IntDir>obj\libwindows-debug-64\</IntDir>
     <TargetName>libwindows-debug-64</TargetName>
-    <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
     <IntDir>obj\libwindows-release-64\</IntDir>
     <TargetName>libwindows-release-64</TargetName>
-    <IncludePath>$(SolutionDir)include\godot-headers;$(SolutionDir)include\gen;$(SolutionDir)include\core;$(SolutionDir)include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -125,7 +121,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>call etc/create_build_files.bat</Command>
+      <Command>call etc/create_build_files.bat
+call etc/create_build_files_filters.bat</Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>
@@ -160,7 +157,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>call etc/create_build_files.bat</Command>
+      <Command>call etc/create_build_files.bat
+call etc/create_build_files_filters.bat</Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>
@@ -192,7 +190,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>call etc/create_build_files.bat</Command>
+      <Command>call etc/create_build_files.bat
+call etc/create_build_files_filters.bat</Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>
@@ -227,7 +226,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>call etc/create_build_files.bat</Command>
+      <Command>call etc/create_build_files.bat
+call etc/create_build_files_filters.bat</Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>
