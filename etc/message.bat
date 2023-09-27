@@ -1,1 +1,1 @@
-echo Press "Reload" if "File Modification Detected" dialog appears with the content "The project 'build.files' has been modified outside the environment" then build/rebuild again.
+echo Press "Ignore" if "File Modification Detected" dialog appears with the content "The project 'build.files' has been modified outside the environment" then build/rebuild again.
